@@ -1,0 +1,136 @@
+/* Gradient background */
+.footer {
+    background: linear-gradient(135deg, #2c5530, #1a3d1f);
+    color: #ffffff;
+    padding: 50px 0 20px;
+    margin-top: auto;
+    border-top: 3px solid #a8d5a8;
+}
+
+/* 2-column grid layout */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    align-items: start;
+    margin-bottom: 40px;
+}
+
+.footer-section h3 {
+    color: #ffffff;
+    font-size: 35px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    position: relative;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: #a8d5a8;
+    border-radius: 2px;
+}
+
+.footer-section h4 {
+    color: #a8d5a8;
+    font-size: 21px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.footer-section p {
+    color: #e8f5e8;
+    line-height: 1.7;
+    font-size: 17px;
+    max-width: 400px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #e8f5e8;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 0;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #a8d5a8;
+}
+
+.footer-bottom {
+    background: rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(168, 213, 168, 0.3);
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #c8e6c8;
+}
+
+.footer-bottom a {
+    color: #a8d5a8;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 0 15px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 30px;
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+
+    .footer-section {
+        text-align: center; /* Center content on mobile */
+    }
+
+    .footer-section p {
+        margin: 0 auto;
+    }
+
+    .footer-section h3 {
+        font-size: 29px;
+    }
+
+    .footer-section h3::after {
+        left: 50%;
+        transform: translateX(-50%); /* Center underline */
+    }
+
+    .footer-bottom {
+        padding: 15px 20px;
+    }
+}
