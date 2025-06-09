@@ -8,7 +8,7 @@ body {
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../img/index-bg.jpg');
+    background:url('../img/index-bg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Keeps background static during scroll */
