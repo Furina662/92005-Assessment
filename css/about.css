@@ -1,0 +1,153 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('../img/index-bg.jpg') center/cover no-repeat fixed;
+}
+
+.main-content {
+    flex: 1;
+    padding-top: 120px;
+}
+
+.attractions-introduction {
+    padding: 64px 32px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px); /* Creates a frosted glass effect over the background */
+    margin: 32px auto;
+    max-width: 1200px;
+    border-radius: 15px;
+}
+
+.page-header-container h1 {
+    font-size: 64px;
+    color: white;
+    margin-bottom: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.introduction-text {
+    font-size: 21px;
+    color: #e8f5e8;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.locations {
+    padding: 64px 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));/* Creates a responsive grid that fits as many 400px columns as possible */
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.location-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.location-card:hover {
+    /* Lifts the card up on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+.location-image {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.milford-sound {
+    background-image: url('../img/about/Milford-Sound.jpg');
+}
+
+.hobbiton {
+    background-image: url('../img/about/Hobbiton-Movie-Set.jpg');
+}
+
+.rotorua {
+    background-image: url('../img/about/Rotorua-Geothermal-Region.jpg');
+}
+
+.mount-cook {
+    background-image: url('../img/about/Mount-Cook.jpg');
+}
+
+.waitomo {
+    background-image: url('../img/about/Tongariro-National-Park.jpg');
+}
+
+.lake-tekapo {
+    background-image: url('../img/about/lake-tekapo.jpg');
+}
+
+.location-content {
+    padding: 24px;
+}
+
+.location-content h3 {
+    font-size: 24px;
+    color: #2c5530;
+    margin-bottom: 8px;
+}
+
+.location-region {
+    font-size: 14px;
+    color: #666;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.location-description {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding-top: 100px;
+    }
+    
+    .attractions-introduction {
+        margin: 16px;
+        padding: 32px 16px;
+    }
+    
+    .page-header-container h1 {
+        font-size: 40px;
+    }
+    
+    .introduction-text {
+        font-size: 18px;
+    }
+    
+    .locations {
+        padding: 32px 16px;
+    }
+    
+    .location-grid { 
+        grid-template-columns: 1fr; /* Switch to a single column layout on smaller screens */
+        gap: 24px;
+    }
+    
+    .location-image {
+        height: 200px;
+    }
+}
