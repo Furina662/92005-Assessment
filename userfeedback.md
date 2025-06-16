@@ -16,3 +16,17 @@ Modification results：
 
 **The above code is just an example. There are five other codes that are not listed here, but they are modified in the same way.**
 -----------------------------------------------------------------------------
+user:eric
+opition: I think you could use a better looking font for your website
+Modification results：
+reset.css:
+@font-face {
+    font-family: 'Oswald';
+    src: url('../font/static/Oswald-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+nav.css/footer.css:
+font-family: 'Oswald', sans-serif;
+-----------------------------------------------------------------------------
