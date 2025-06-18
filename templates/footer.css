@@ -51,7 +51,7 @@
 .footer-section p {
     color: #e8f5e8;
     line-height: 1.7;
-    font-size: 17px;
+    font-size: 22px; 
     max-width: 400px;
 }
 
@@ -68,7 +68,7 @@
 .footer-section ul li a {
     color: #e8f5e8;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     padding: 5px 0;
     display: inline-block;
     transition: color 0.3s ease;
@@ -87,7 +87,7 @@
 
 .footer-bottom p {
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
     color: #c8e6c8;
 }
 
@@ -95,6 +95,7 @@
     color: #a8d5a8;
     text-decoration: none;
     font-weight: 600;
+    font-size: 20px; 
     transition: color 0.3s ease;
 }
 

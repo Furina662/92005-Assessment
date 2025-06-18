@@ -30,3 +30,19 @@ reset.css:
 nav.css/footer.css:
 font-family: 'Oswald', sans-serif;
 -----------------------------------------------------------------------------
+user:eric
+opition:i think your footer font is too small
+Modification results：
+footer.css:
+.footer-section p {
+    font-size: 22px;
+}
+.footer-section ul li a {
+    font-size: 20px;
+}
+.footer-bottom p {
+    font-size: 18px;
+}
+.footer-bottom a {
+    font-size: 20px;
+}
