@@ -1,19 +1,19 @@
 ## File Structure
 ### HTML Files
-index.html - Homepage
-about.html - About Kaitiakitanga
-action.html - Take Action page
-contact.html - Contact page
+- `index.html - Homepage
+- `about.html - About Kaitiakitanga
+- `action.html - Take Action page
+- `contact.html - Contact page
 
 ### CSS Files
-style.css - Homepage stylesheet
-about.css - About page stylesheet
-action.css - Action page stylesheet
-reset.css - Reset stylesheet
+- `style.css - Homepage stylesheet
+- `about.css - About page stylesheet
+- `action.css - Action page stylesheet
+- `reset.css - Reset stylesheet
 
 ### Image Resources
-img/index-bg.jpg - Homepage background image
-img/about/ - About page images
+- `img/index-bg.jpg - Homepage background image
+- `img/about/ - About page images
 
 ### JavaScript Files
 nav.js - For navigation bar responsive design
